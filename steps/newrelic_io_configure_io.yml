@@ -1,0 +1,49 @@
+id: newrelic_io_configure_io
+hints: []
+startFlow:
+  do:
+  - actionId: bot_message
+    params:
+      person: head-of-rd
+      messages:
+      - text: "Hey again! Having great monitoring is good, but having visibility on all the metrics collected is even better. Today we’re going to configure some dashboards and alerts for you to be able to sit back and relax while your application monitors itself!"
+        delay: 1000
+      - text: "New Relic has some awesome monitoring packages, called **Instant Observability**, that are already preconfigured for your application. All you need to do is install it!"
+        delay: 1000
+
+  - actionId: bot_message
+    params:
+      person: head-of-rd
+    paramsFramework:
+      node:
+        messages:
+        - text: "Go ahead and install the [Nodejs Instant Observability package](https://newrelic.com/instant-observability/node-js/01fdea36-5a15-44b4-a864-c4c99866735b), and let me know when you’re done"
+          delay: 1000
+      rails:
+        messages:
+        - text: "Go ahead and install the [Rails Instant Observability package](https://newrelic.com/instant-observability/rails/c722b540-6e96-437d-9cd9-aa6625ab443f), and let me know when you’re done"
+          delay: 1000
+      python:
+        messages:
+        - text: "Go ahead and install the [Python Instant Observability package](https://newrelic.com/instant-observability/fastapi/e559ec64-f765-4470-a15f-1901fcebb468), and let me know when you’re done"
+
+          delay: 1000
+trigger:
+  type: user_message
+  params:
+    person: head-of-rd
+  flowNode:
+    if:
+      conditions:
+      - conditionId: is_user_message_text_ready_to_continue
+      then:
+        do:
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: "Umm, If you need any help, just let me know that you’re stuck. If that’s not the case - take your time and tell me once you're ready :)"
+              delay: 2000

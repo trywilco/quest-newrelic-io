@@ -1,0 +1,21 @@
+id: newrelic_io_call_webhook
+hints: []
+startFlow:
+  do:
+  - actionId: bot_message
+    params:
+      person: head-of-rd
+      messages:
+      - text: "Awesome, thanks! So please configure a webhook notification to this endpoint - `${wilcoServerUrl}/webhooks/newrelic/${user.id}/alert` and **send a test notification** so we can see everything’s working properly"
+        delay: 1000
+trigger:
+  type: newrelic_event_received
+  flowNode:
+    do:
+    - actionId: bot_message
+      params:
+        person: head-of-rd
+        messages:
+        - text: "Yay! Looks like it works. I just got an alert from New Relic in Slack."
+          delay: 500
+    - actionId: finish_step

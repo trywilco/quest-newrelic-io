@@ -1,0 +1,31 @@
+id: newrelic_io_configure_alert_webhook
+hints: []
+startFlow:
+  do:
+  - actionId: bot_message
+    params:
+      person: head-of-rd
+      messages:
+      - text: "Great, the dashboard will really make our lives easier."
+        delay: 700
+      - text: "Now we only need to be actively notified when an incident occures, by adding a [Workflow](https://docs.newrelic.com/docs/alerts-applied-intelligence/applied-intelligence/incident-workflows/incident-workflows/) to the quickstart policy that was configured for us. You can find that policy under Alerts & AI > Alert conditions. Would love you to take care of it, so **let me know when you find the notification settings** under this policy."
+        delay: 1000
+trigger:
+  type: user_message
+  params:
+    person: head-of-rd
+  flowNode:
+    if:
+      conditions:
+      - conditionId: is_user_message_text_ready_to_continue
+      then:
+        do:
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: "No problem. Give me a holler when you’re ready, or if you need some extra guidance."
+              delay: 1000

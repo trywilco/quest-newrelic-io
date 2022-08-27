@@ -1,0 +1,40 @@
+id: newrelic_io
+title: Red Alert
+description: In this quest, you’ll learn how to set up the New Relic Instant Observability Dashboard for your backend application so you can explore your data, understand context, and resolve problems faster.
+summary: "  "
+slogan: Configuring Alerts with New Relic I/O
+level: beginner
+resources:
+- name: heroku_backend
+- name: heroku_frontend
+steps:
+- newrelic_io_configure_io
+- newrelic_io_configure_alert_webhook
+- newrelic_io_call_webhook
+duration: 1
+skills:
+- devops
+- monitoring
+- backend
+- observability
+questDependency: newrelic_observability
+messages:
+  questStarted:
+    person: head-of-rd
+    messages:
+    - text: "![](https://media.giphy.com/media/EHfmq8F99yC8IHVTWV/giphy.gif)"
+      delay: 0
+    - text: "Hey again!"
+      delay: 800
+    - text: "You know the drill - before you do anything else, please **run the following command** on your repo: `${scriptCommand}`, and **let me know** once you're done."
+      delay: 1000
+  questStartedNotReady:
+    person: head-of-rd
+    messages:
+    - text: "Let me know when you are ready."
+      delay: 800
+  questFinished:
+    person: head-of-rd
+    messages:
+    - text: "Well done, now your application is fully monitored, and you can also view key metrics and be alerted if anything fails! **[click here](${platform.home})** when you're ready for your next project :)"
+      delay: 2200
