@@ -17,6 +17,10 @@ skills:
 - monitoring
 - backend
 - observability
+learningObjectives: 
+- Configuring NewRelic Instant Observability
+- Configuring webhooks
+- Creating alerts
 questDependency: newrelic_observability
 messages:
   questStarted:
