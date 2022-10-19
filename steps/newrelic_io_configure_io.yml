@@ -1,6 +1,6 @@
 id: newrelic_io_configure_io
 learningObjectives:
-  - Configuring NewRelic Instant Observability
+  - Configuring New Relic Instant Observability
 hints: []
 startFlow:
   do:
