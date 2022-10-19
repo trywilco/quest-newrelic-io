@@ -1,4 +1,6 @@
 id: newrelic_io_configure_alert_webhook
+learningObjectives:
+  - Configuring webhooks
 hints: []
 startFlow:
   do:
