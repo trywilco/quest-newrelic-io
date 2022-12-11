@@ -4,6 +4,8 @@ description: In this quest, you’ll learn how to set up the New Relic Instant O
 summary: Now that you've completed the Red Alert quest, you know how to configure your application dashboard to track key KPIs and receive alerts about issues that need your attention. In this quest, you added the Instant Observability dashboard to your application’s backend and added a webhook notification channel for alerts. 
 slogan: Configuring Alerts with New Relic I/O
 level: beginner
+creatorsLogoUrls: 
+- "https://res.cloudinary.com/wilco/image/upload/v1670504368/companies-logos/New-Relic/new-relic-logo_icont2.svg"
 resources:
 - name: heroku_backend
 - name: heroku_frontend
