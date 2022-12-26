@@ -1,12 +1,13 @@
-id: newrelic_io
+id: newrelic_io_k8s
 title: Red Alert
 description: In this quest, you’ll learn how to set up the New Relic Instant Observability Dashboard for your backend application so you can explore your data, understand context, and resolve problems faster.
 summary: Now that you've completed the Red Alert quest, you know how to configure your application dashboard to track key KPIs and receive alerts about issues that need your attention. In this quest, you added the Instant Observability dashboard to your application’s backend and added a webhook notification channel for alerts. 
 slogan: Configuring Alerts with New Relic I/O
 level: beginner
 resources:
-- name: heroku_backend
-- name: heroku_frontend
+  - name: k8s
+    config:
+      deploy: true
 steps:
 - newrelic_io_configure_io
 - newrelic_io_configure_alert_webhook
