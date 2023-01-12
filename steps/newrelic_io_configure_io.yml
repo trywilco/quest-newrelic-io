@@ -1,7 +1,8 @@
 id: newrelic_io_configure_io
 learningObjectives:
   - Configuring New Relic Instant Observability
-hints: []
+hints: 
+  - Sign in to New Relic with your account and keep in mind you can skip the installation of the agent since we already installed at earlier.
 startFlow:
   do:
   - actionId: bot_message
@@ -19,19 +20,19 @@ startFlow:
     paramsFramework:
       node:
         messages:
-        - text: "Go ahead and install the [Nodejs Instant Observability package](https://newrelic.com/instant-observability/node-js/01fdea36-5a15-44b4-a864-c4c99866735b)."
+        - text: "Go ahead and follow the instructions to set the [Nodejs Instant Observability package](https://newrelic.com/instant-observability/node-js/01fdea36-5a15-44b4-a864-c4c99866735b)."
           delay: 1000
         - text: "Keep in mind you can skip the agent installation since you've already done it. :instruction[**Let me know when you’re done**]"
           delay: 1000
       rails:
         messages:
-        - text: "Go ahead and install the [Rails Instant Observability package](https://newrelic.com/instant-observability/rails/c722b540-6e96-437d-9cd9-aa6625ab443f), and let me know when you’re done"
+        - text: "Go ahead and follow the instructions to set the [Rails Instant Observability package](https://newrelic.com/instant-observability/rails/c722b540-6e96-437d-9cd9-aa6625ab443f)."
           delay: 1000
         - text: "Keep in mind you can skip the agent installation since you've already done it. :instruction[**Let me know when you’re done**]"
           delay: 1000
       python:
         messages:
-        - text: "Go ahead and install the [Python Instant Observability package](https://newrelic.com/instant-observability/fastapi/e559ec64-f765-4470-a15f-1901fcebb468), and let me know when you’re done"
+        - text: "Go ahead and follow the instructions to set the [Python Instant Observability package](https://newrelic.com/instant-observability/fastapi/e559ec64-f765-4470-a15f-1901fcebb468)."
           delay: 1000
         - text: "Keep in mind you can skip the agent installation since you've already done it. :instruction[**Let me know when you’re done**]"
           delay: 1000
