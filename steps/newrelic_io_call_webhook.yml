@@ -2,7 +2,7 @@ id: newrelic_io_call_webhook
 learningObjectives:
   - Configuring alerts
 hints:
-  - Go to Create a webhook -> Create Destination -> Send test notifications
+  - Go to `Create a webhook` -> `Create Destination` -> `Send test notifications`
 startFlow:
   do:
   - actionId: bot_message
