@@ -3,7 +3,6 @@ learningObjectives:
   - Configuring webhooks
 hints: 
   - Go to `Alert conditions` -> Notification Settings -> Create workflow
-  - Go to Create a webhook -> Create Destination -> Send test notifications
 startFlow:
   do:
   - actionId: bot_message
