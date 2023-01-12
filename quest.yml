@@ -5,8 +5,10 @@ summary: Now that you've completed the Red Alert quest, you know how to configur
 slogan: Configuring Alerts with New Relic I/O
 level: beginner
 resources:
-- name: heroku_backend
-- name: heroku_frontend
+  - name: k8s
+    config:
+      deploy: true
+
 steps:
 - newrelic_io_configure_io
 - newrelic_io_configure_alert_webhook
