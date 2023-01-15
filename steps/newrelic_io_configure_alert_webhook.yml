@@ -1,7 +1,8 @@
 id: newrelic_io_configure_alert_webhook
 learningObjectives:
   - Configuring webhooks
-hints: []
+hints: 
+  - Go to `Alert conditions` -> `Notification Settings` -> `Create workflow`
 startFlow:
   do:
   - actionId: bot_message
