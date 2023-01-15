@@ -6,8 +6,6 @@ slogan: Configuring Alerts with New Relic I/O
 level: beginner
 resources:
 - name: k8s
-  config: {}
-  
 repository: https://github.com/trywilco/Anythink-Market-NewRelic
 
 steps:
