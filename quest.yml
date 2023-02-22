@@ -1,5 +1,6 @@
 id: newrelic_io
 title: Red Alert
+subtitle: Set up New Relic's Instant Observability Dashboard and explore data
 description: In this quest, you’ll learn how to set up the New Relic Instant Observability Dashboard for your backend application so you can explore your data, understand context, and resolve problems faster.
 summary: Now that you've completed the Red Alert quest, you know how to configure your application dashboard to track key KPIs and receive alerts about issues that need your attention. In this quest, you added the Instant Observability dashboard to your application’s backend and added a webhook notification channel for alerts. 
 slogan: Configuring Alerts with New Relic I/O
@@ -23,5 +24,5 @@ messages:
   questFinished:
     person: head-of-rd
     messages:
-    - text: "Well done, now your application is fully monitored, and you can also view key metrics and be alerted if anything fails! **[click here](${platform.home})** when you're ready for your next project :)"
-      delay: 2200
+    - text: "Well done, now your application is fully monitored, and you can also view key metrics and be alerted if anything fails! :)"
+      delay: 1500
